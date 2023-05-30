@@ -5,13 +5,8 @@ port = 0
 # server socket bluetooth MAC Address
 server_mac = 'XX:XX:XX:XX:XX:XX' 
 
-def createSocket():
-    return bluetooth.BluetoothSocket(bluetooth.RFCOMM)
-
-
 def sendMessage(client_sock, userInput):
     client_sock.send(userInput)
-
 
 # function that deserialized the json object recieved from the Central Hub (RPI 3B+) and mapping information about each instrument with a Serial No.
 def showConnectedInstruments(client_sock):
@@ -30,7 +25,7 @@ def showConnectedInstruments(client_sock):
 
 if __name__ == '__main__':
     # creating client socket 
-    client_sock = createSocket()
+    client_sock = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
     
     # connecting client socket to the server socket
     client_sock.connect(( server_mac, port ))
