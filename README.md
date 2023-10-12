@@ -1,4 +1,4 @@
-# BlueControl (still under work...)
+# BlueControlv1.0 is licensed under CC BY-NC-SA 4.0 (<a href= 'https://www.linkedin.com/posts/srikanthsugavanam_github-srikanths-iitbluecontrol-ee536-activity-7117839407281270785-Yqxn?utm_source=share&utm_medium=member_desktop)'>Open-Soucrce @IIT Mandi</a>)
 [EE536: Internet of Things] BlueControl : Instrument Automation with SCPI over Bluetooth
 
 For now I have worked with two Instruments:
